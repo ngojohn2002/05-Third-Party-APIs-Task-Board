@@ -45,4 +45,6 @@ Coming soon ...
 
 ## Link to app
 
-Coming soon ...
+Please visit my deployed web app here --> [https://ngojohn2002.github.io/05-Third-Party-APIs-Task-Board/](https://ngojohn2002.github.io/05-Third-Party-APIs-Task-Board/)
+
+&copy; 2024 - All rights reserved.
