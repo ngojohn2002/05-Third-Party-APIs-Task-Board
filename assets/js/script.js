@@ -5,16 +5,13 @@ const taskDueDateEl = $("#taskDueDate");
 const taskDescriptionInputEl = $("taskDescriptionInput");
 
 // Retrieve tasks and nextId from localStorage
-function readTaskListFromStorage() {
-  let taskList = JSON.parse(localStorage.getItem("taskList"));
-  // If no taskList in localStorage, create an empty array taskList and generate new task ID
-  if (!taskList) {
-    taskList = [];
-  }
+let taskList = JSON.parse(localStorage.getItem("taskList"));
+let nextId = JSON.parse(localStorage.getItem("nextId"));
 
-  let nextId = JSON.parse(localStorage.getItem("nextId"));
-  //  If nextId is null, generate new task ID
-  if (nextId === null) {
+function readTaskListFromStorage() {
+  // If no taskList in localStorage or if nextId is null, create an empty array taskList and generate new task ID
+  if (!taskList || nextId === null) {
+    taskList = [];
     nextId = generateTaskId();
   }
 
