@@ -11,7 +11,7 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-  
+
   <link rel="stylesheet" href="./assets/css/style.css" />
 
   <title>Task Board</title>
@@ -32,8 +32,7 @@
 
     <!-- Todo: Create a modal with a form to add tasks -->
     <!-- Modal -->
-    <form id="modalForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalForm"
-      aria-hidden="true">
+    <form id="modalForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalForm" aria-hidden="true">
       <div class="modal-dialog modal-content d-flex justify-content-center" role="modal form">
         <div class="modal-header">
           <h5 class="modal-title">Add Task</h5>
@@ -49,7 +48,7 @@
             <div class="form-group col-6">
               <label for="taskTitleInput">Task Title</label>
               <br>
-              <input type="text" id="taskTitleInput">
+              <input type="text" class="form-control" id="taskTitleInput">
             </div>
             <!-- Task due date input -->
             <div class="form-group col-6">
@@ -64,12 +63,12 @@
             <div class="form-group col-12">
               <label for="taskDescriptionInput">Task Description</label>
               <br>
-              <textarea name="taskDescriptionInput" id="taskDescriptionInput" rows="3"></textarea>
+              <textarea class="form-control" name="taskDescriptionInput" id="taskDescriptionInput" rows="5" cols="50"></textarea>
             </div>
           </div>
         </div>
 
-        <div class="modal-footer">
+        <div class="modal-footer horizontal-center">
           <div class="text-center mb-5">
             <button type="submit" class="btn btn-success" data-bs-dismiss="modal">
               Add Task
